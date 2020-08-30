@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3 - Tabelas e Formulários</title>
+    <style type="text/css">
+        table {
+            border: none;
+            text-align: center;
+        }
+
+        th,
+        td {
+            border: none;
+            background-color: #dddddd;
+            padding: 5px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Exercício 3 - Tabelas e Formulários</h1>
+    <div>
+        <h2>Tabela</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th>Nota da crítica</th>
+                <th>Nota do público</th>
+            </tr>
+            <tr>
+                <th>Fleabag</th>
+                <td>100%</td>
+                <td>93%</td>
+            </tr>
+            <tr>
+                <th>Dead to Me</th>
+                <td>90%</td>
+                <td>90%</td>
+            </tr>
+            <tr>
+                <th>Halt and Catch Fire</th>
+                <td>90%</td>
+                <td>92%</td>
+            </tr>
+            <tr>
+                <th>Lovecraft Country</th>
+                <td colspan="2">Sem críticas ainda</td>
+            </tr>
+        </table>
+        <small>*segundo o Rotten Tomatoes</small>
+    </div>
+
+    <div>
+        <h2>Formulário</h2>
+        <form action="https://ptsv2.com/t/yep55-1598826598/post" method="POST">
+            <label for="busca"> Buscar produto
+                <input type="search" id="busca" placeholder="Ração de papagaio" />
+            </label>
+
+            <fieldset>
+                <legend>Seus dados</legend>
+                <label for="nome">Nome
+                    <input id="nome" type="text" required>
+                </label>
+                <br />
+                <label for="email">Email
+                    <input id="email" type="email" required>
+                </label>
+                <br />
+                <label for="senha">Senha
+                    <input id="senha" type="password" required>
+                </label>
+                <br />
+                <label for="dataNascimento">Data de nascimento
+                    <input id="dataNascimento" type="date" required>
+                </label>
+                <br />
+                <label for="fotoPerfil">Foto de perfil
+                    <input id="fotoPerfil" type="file" accept="image/png, image/jpeg">
+                </label>
+
+                <br />
+
+                <label>Público geral
+                    <input type="radio" value="publico" checked>
+                </label>
+                <br />
+                <label>Crítico
+                    <input type="radio" value="critico">
+                </label>
+            </fieldset>
+            <label for="descoberta-select">Por onde você descobtriu a gente?</label>
+            <select id="descoberta-select" name="descoberta">
+                <option value="twitter">Twitter</option>
+                <option value="facebook">Facebook</option>
+                <option value="youtube">YouTube</option>
+            </select>
+            <br />
+            <label for="">
+                <input type="checkbox" value="isEmailPermitido" checked>
+                Enviar novidades por email
+            </label>
+            <br />
+            <label for="">
+                <input type="checkbox" value="isSmsPermitido" checked>
+                Enviar mensagens por SMS
+            </label>
+            <br />
+
+            <fieldset>
+                <legend>Aleatório</legend>
+                <label>Escolha cor<input type="color"></label>
+                <br>
+                <label><input type="hidden" value="haValor"></label>
+                <br>
+                <label>Volume<input type="range" min="0" max="11"></label>
+            </fieldset>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+
+
+</body>
+
+</html>
