@@ -1,0 +1,72 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    background: #969696;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.exterior-calculadora {
+    margin: 0 auto;
+    width: 35vw;
+    height: 85%;
+    padding: 15px;
+    background-color: #616161;
+    border-radius: 5px;
+}
+
+.interior-calculadora {
+    display: grid;
+    height: 100%;
+    padding: 0 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 12px;
+    grid-auto-rows: auto;
+}
+
+.visor {
+    background-color: #333;
+    font-size: 2rem;
+    grid-area: 1 / 1 / 2 / 5;
+    height: 90px;
+    border-radius: 5px;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.visor span {
+    line-height: 90px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #adadad;
+    border-radius: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.botao-zero {
+    grid-area: 6 / 1 / 7 / 3;
+    background-color: #333;
+    color: white;
+}
+
+.botao-soma {
+    grid-area: 5 / 4 / 7 / 5;
+    background-color: #333;
+    color: white;
+}
